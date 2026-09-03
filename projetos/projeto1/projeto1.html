@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #btnpg1:hover {
+            background-color: rgb(236, 112, 77) !important;
+            color: white !important;
+            opacity: 1 !important;
+        }
+
+        #apg1 {
+            color: rgb(233, 79, 37) !important;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="d-flex flex-column" style="min-height: 100vh;">
+        <header id="inicio" style="min-height: 10vh;">
+            <nav class="navbar bg-body-tertiary" style="height: 10vh; background-color: rgba(49, 59, 1, 0.527)!important ;">
+                <div class="container-fluid">
+                    <a id="apg1" class="navbar-brand" href="#">
+                        <img src="./images/cachorro.png" alt="Logo" width="45" height="36"
+                            class="d-inline-block align-text-top">
+                        <span style="font-size: 40px;">Cuidados Com Animais no Verão</span>
+                    </a>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pagina2">Cuidados com o Pet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pagina3">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--PAGINA 1-->
+            <section style="min-height: 90vh; background-image: url('./images/cachorrowallpaper.jpg'); background-size: cover; 
+            background-position: center; background-repeat: no-repeat; display: flex; flex-direction: column; align-items: center;
+            justify-content: center;">
+
+                <h3 style="color: rgba(255,255,255,0.99); background-color: rgba(12,11,11,0.99);
+                text-align: center;">
+                    Seu pet precisa de Atenção nesse Verão!</h3>
+                <h4 style="color: rgba(255,255,255,0.99); background-color: rgba(12,11,11,0.99);
+                text-align: center;">
+                    O el nino está chegando, cuidado para seu não queimar as</h4>
+                <hr>
+                <a href="#pagina2">
+                    <button id="btnpg1" class="btn btn-warning"
+                        style="opacity: 0.8; background-color: rgba(12,11,11,0.99); color: white; ">Clique aqui Para
+                        saber mais!</button>
+                </a>
+
+            </section>
+
+            <!--PAGINA 2-->
+            <section id="pagina2" style="min-height: 100vh; background-color: aqua;display: flex;">
+                <div class="container-fluid">
+                    <div class="row" style="min-height: 100vh;">
+                        <!--Coluna Esquerda-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-image: url(./images/cuidadosanimais.webp);">
+                            <h2 style="font-size: 64px; background-color: rgba(221, 215, 250, 0.938);">Cuidados com o Pet</h2>
+                            <hr>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Cuidado 1: Hidratação
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Quia, necessitatibus
+                                            beatae omnis magnam fugiat animi officia ipsa
+                                            ipsum cumque. Et deserunt voluptatum vel
+                                            maiores sequi quo nobis earum doloribus
+                                            beatae?</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Cuidado 2: Comida
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Natus repellat
+                                            sint eum consequuntur, fuga suscipit, doloremque
+                                            nesciunt hic perferendis blanditiis nihil
+                                            distinctio cumque sequi eaque, vel maiores
+                                            commodi! Sunt, delectus!</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Cuidade 3: Saúde e Higiene
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Lorem ipsum dolor, sit
+                                            amet consectetur adipisicing elit. Quasi
+                                            voluptatibus doloribus consequuntur itaque
+                                            voluptatem ut, ex quo unde, animi maiores omnis
+                                            pariatur molestias repellat doloremque recusandae?
+                                            Architecto fugiat sequi doloremque?</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Coluna Direita-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-image: url(./images/elnino.jpg); background-size: cover; ">
+
+                            <h2 style="font-size: 64px; text-align: center; background-color: rgba(127, 255, 212, 0.363);">Principais Impactos do El nino nos Pets!</h2>
+                            <hr>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-danger" aria-current="true">
+                                    Estresse Térmico: Cães regulam a temperatura ofegando e suando pouco;
+                                    o calor excessivo dificulta esse resfriamento.
+                                </li>
+                                <li class="list-group-item list-group-item-warning">
+                                    Desidratação e insolação: O consumo inadequado de água e
+                                    a exposição ao sol forte levam a quadros graves e rápidos de prostração.
+                                </li>
+                                <li class="list-group-item list-group-item-danger">
+                                    Problemas respiratórios: O ar seco e a fumaça de queimadas (comuns em periodos de
+                                    seca extrema) irritam as vias aéreas do pet.
+                                </li>
+                                <li class="list-group-item list-group-item-warning">
+                                    O aumento de temperatura e umidade em algumas micro-regiões favorece pulgas,
+                                    carrapatos e mosquitos.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--PAGINA 3-->
+            <section id="pagina3" class="d-flex justify-content-center align-items-center flex-column"
+                style="min-height: 100vh; background-image: url(./images/suporte.jpg); background-size: cover;">
+                <h1 style="background-color: rgba(210, 105, 30, 0.568);">Gostaria de mais Informações? Entre em contato com nossa ong:</h1>
+                <hr>
+                <form style="background-color: rgba(210, 105, 30, 0.568); padding: 1%;">
+                    <div class="mb-3">
+                        <label style="text-align: center; display: block;" for="exampleInputEmail1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Não vamos compartilhar seu e-mail!</div>
+                    </div>
+                    <div class="mb-3">
+                        <label style="text-align: center; display: block;"  for="exampleInputPassword1" class="form-label">Nome:</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <button type="submit" class="btn btn-primary ">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="mt-auto d-flex align-items-center justify-content-center"
+            style="min-height: 10vh; background-color: rgba(49, 59, 1, 0.527);">
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pagina2">Cuidados com o Pet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pagina3">Contato</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

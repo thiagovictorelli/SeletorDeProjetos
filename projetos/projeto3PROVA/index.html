@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedSync</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <!-- Utilizar uma fonte diferente através do googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #slogan {
+            font-family: 'IBM Plex Serif', sans-serif;
+            font-style: italic;
+            font-size: 5vw;
+        }
+
+        .FiraSans {
+            font-family: 'Fira Sans';
+        }
+
+        .btn-mousse:hover {
+            background-color: #00D478;
+            color: #0077B6;
+        }
+
+        .texto{
+            color: #1AB971;
+        }
+
+        #carrinho:hover {
+            background-color: #1AB971;
+        }
+
+    </style>
+
+    <link rel="shortcut icon" href="images/LogoMedSync.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div style="background-color: pink; min-height: 100vh; overflow-y: hidden; overflow: hidden;">
+        <!--PAGINA 1 - Página Inicial (Home)-->
+        <div class="pg1" style="width: 100vw;">
+            <header style="min-height: 10vh; background-color: #004E98; display: flex; align-items: center;" id="home">
+                <!--NAVBAR-->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/LogoMedSync.png" width="50vw" height="50vh" alt="Bootstrap" width="30"
+                                height="24">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link texto" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link texto" href="#destaques">Destaques</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link texto" href="#remedios">Remédios & Catálogo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link texto" href="#historia">História</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link texto" href="#converse">Converse conosco</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-end"
+                                style="max-width: 100vw; justify-content: center; margin-left: 5vw;">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" style="width: 50vw;"
+                                        placeholder="Encontre um remédio, leia uma bola, localiza nossas farmácias..."
+                                        aria-label="Search" />
+                                    <button class="btn btn-outline-success" type="submit"
+                                        style="background-color: #00D478;">Pesquisar</button>
+                                </form>
+                                <div>
+                                    <a href=""><img src="images/Carrinho.png" width="50vw" height="50vh" alt=""
+                                            id="carrinho" style="margin-left: 1vw;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- CORPO DO SITE-->
+            <main>
+                <!-- SLOGAN/TÍTULO-->
+                <section
+                    style="width: 100vw; height: 20vh; background-image: linear-gradient(to right, #00b4d8, #00bfd3, #00c8c0, #00cfa1, #00d478); display: flex; justify-content: center; align-items: center;">
+                    <h1 id="slogan">Saúde em perfeita sincronia</h1>
+                </section>
+
+                <!-- Apresentação da Empresa-->
+                <section
+                    style="display: flex; justify-content: center; align-items: center; height: 50vh; background-color: #97e3f2;">
+                    <div style="display: flex; justify-content: center; width:40vw;">
+                        <img src="images/FachadaMedSync.png" width="60%" style="border-radius: 100px;" alt="">
+                    </div>
+                    <div class="FiraSans" style="width: 60vw; margin-left: -5%;">
+                        <p style="font-size: 1.5vw; text-align: center; color: #081D41;">A MedSync nasceu do propósito
+                            de três
+                            professores empreendedores em transformar o cuidado em saúde. Fundada em Rio Claro/SP, somos
+                            uma farmácia de bairro moderna, humana e acessível, criada para estar sempre ao seu lado.
+                            <br>
+
+                            Mais do que fornecer medicamentos, oferecemos escuta ativa, orientação de confiança, entrega
+                            rápida e um atendimento acolhedor para você e sua família, garantindo segurança e
+                            proximidade integral em cada momento da sua vida. <br>
+
+                            <strong>Transformando vidas com cuidado humano, tecnologia e a proximidade que você
+                                merece.</strong>
+                        </p>
+                    </div>
+                </section>
+
+                <!--Destaques-->
+                <section
+                    style="background-image: radial-gradient(circle, #00d478, #08cd76, #10c675, #15c073, #1ab971);; height: 75vh;"
+                    id="destaques">
+                    <div style="padding: 1%">
+                        <!--TÍTULO-->
+                        <div class="FiraSans"
+                            style="height: 8vh; display: flex; justify-content: center; align-items: center;">
+                            <h1 style="text-align: center; border-bottom: 2px #004e98 solid;">Destaques em Rio Claro
+                            </h1>
+                        </div>
+                        <!--CARDS DESTAQUES-->
+                        <div style="display: flex; justify-content: center; gap: 1%;">
+                            <!--CARD 1-->
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Dipirona.webp" height="300vh" class="card-img-top" alt="...">
+                                <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                                    <h4 class="card-title">Dipirona</h4>
+                                    <p class="card-text"><strong>
+                                            Analgésico e antitérmico consagrado, alivia dores e febre de forma
+                                            rápida, eficaz e acessível.
+                                        </strong></p>
+                                    <p><strong>R$9,89</strong></p>
+                                    <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Adicionar ao Carrinho
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                            style="font-size: 150%;">Mensagem</span></h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                            foi adicionado no carrinho com sucesso!</strong></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn" style="background-color: #1AB971"
+                                                        data-bs-dismiss="modal">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--CARD 2-->
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Ibuprofeno.jpg" height="300vh" class="card-img-top" alt="...">
+                                <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                                    <h4 class="card-title">Ibuprofeno</h4>
+                                    <p class="card-text"><strong>
+                                            Combate dores e inflamações com ação analgésica e anti-inflamatória rápida,
+                                            aliviando o desconforto eficientemente.
+                                        </strong></p>
+                                    <p><strong>R$3,10</strong></p>
+                                    <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Adicionar ao Carrinho
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                            style="font-size: 150%;">Mensagem</span></h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                            foi adicionado no carrinho com sucesso!</strong></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn" style="background-color: #1AB971"
+                                                        data-bs-dismiss="modal">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!--CARD 3-->
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/Dorflex.jpg" height="300vh" class="card-img-top" alt="...">
+                                <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                                    <h4 class="card-title">Dorflex</h4>
+                                    <p class="card-text"><strong>
+                                            Tripla ação contra dores musculares: alivia a tensão e relaxa a musculatura
+                                            rapidamente.
+                                        </strong></p>
+                                    <p><strong>R$24,95</strong></p>
+                                    <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Adicionar ao Carrinho
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                            style="font-size: 150%;">Mensagem</span></h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                            foi adicionado no carrinho com sucesso!</strong></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn" style="background-color: #1AB971"
+                                                        data-bs-dismiss="modal">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+        </div>
+        <!-- SEGUNDA PAGINA - Página de Remédios & Catálogo -->
+        <section
+            style="padding: 1%; background-image: radial-gradient(circle, #97e3f2, #71c8e3, #4dadd5, #2992c6, #0077b6);"
+            id="remedios">
+            <div style="display: flex; justify-content: center;">
+                <h1 class="FiraSans" style="text-align: center; border-bottom: 2px solid #004e98;">Remédios &
+                    Catálogo</h1>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 1%;  margin-top: 1%;">
+                <!--CARD 1-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Parecetamol.jpg" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Paracetamol</h4>
+                        <p class="card-text"><strong>
+                                Analgésico e antitérmico para o tratamento de dores de cabeça e resfriados
+                            </strong></p>
+                        <p><strong>R$10,90</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn btn-mousse" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--CARD 2-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/ProtetorSolar.jpg" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Protetor Solar</h4>
+                        <p class="card-text"><strong>
+                                Creme dermatológico protetor contra raios UVA/UVB que previne o queimaduras
+                            </strong></p>
+                        <p><strong>R$65,15</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--CARD 3-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Band-Aid.webp" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Band-Aid</h4>
+                        <p class="card-text"><strong>
+                                Fitas protetoras flexíveis com almofada central para cobrir pequenos cortes e
+                                machucados
+                            </strong></p>
+                        <p><strong>R$18,05</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--CARD 4-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Omega3.webp" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Ômega 3</h4>
+                        <p class="card-text"><strong>
+                                Cápsulas de óleo de peixe que auxiliam na manutenção da saúde cardiovascular
+                            </strong></p>
+                        <p><strong>R$69,90</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 1%; margin-top: 1%;">
+                <!--CARD 5-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Creatina.webp" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Creatina</h4>
+                        <p class="card-text"><strong>
+                                Suplemento que aumenta a força muscular e melhora o desempenho em treinos
+                                intensos
+                            </strong></p>
+                        <p><strong>R$59,90</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--CARD 6-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/PastilhaGarganta.jpg" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Pastilha para Garganta</h4>
+                        <p class="card-text"><strong>
+                                Pastilhas mastigáveis com ação antisséptica para aliviar a irritação e dor de
+                                garganta
+                            </strong></p>
+                        <p><strong>R$13,79</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--CARD 7-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/VitaminaC.jpg" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Vitamina C</h4>
+                        <p class="card-text"><strong>
+                                Comprimidos efervescentes que auxiliam no fortalecimento do sistema imunológico
+                                e energia.
+                            </strong></p>
+                        <p><strong>R$9,89</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--CARD 8-->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Sabonete.webp" height="300vh" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #004e98; color: #1AB971;">
+                        <h4 class="card-title">Sabonete</h4>
+                        <p class="card-text"><strong>
+                                Limpeza profunda, hidratação intensa e suave perfumação para renovar a pele todos os dias.
+                            </strong></p>
+                        <p><strong>R$2,89</strong></p>
+                        <button type="button" class="btn btn-mousse" style="background-color: #1AB971;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"
+                                    style="background-color: #004e98; border: 0px; color: #1AB971;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"><span
+                                                style="font-size: 150%;">Mensagem</span></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p style="text-align: center; font-size: 150%;"><strong>Seu remédio
+                                                foi adicionado no carrinho com sucesso!</strong></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" style="background-color: #1AB971"
+                                            data-bs-dismiss="modal">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TERCEIRA PÁGINA - Nossa História -->
+        <section id="historia"
+            style="display: flex; justify-content: center; align-items: center; height: 90vh; background-image: radial-gradient(circle, #a3f2c4, #88e8ac, #6ddd92, #52d276, #34c759);">
+            <div class="FiraSans" style="width: 60vw; margin-right: -5%; color: #081D41;">
+                <h1 style="text-align: center; font-size: 5.5vh;" class="FiraSans">A Nossa História</h1>
+                <p style="font-size: 1.5vw; text-align: center; border: 1;">
+
+                    A história da MedSync nasceu do encontro entre amizade, educação e propósito. Como
+                    professores em Rio Claro/SP, Daniel, Eduardo e Grilo sempre compartilharam a vocação de
+                    transformar realidades pelo conhecimento e pelo cuidado humano. No entanto, foi durante o
+                    delicado tratamento de câncer enfrentado por Grilo que tudo mudou: a vivência entre
+                    consultas, exames e rotinas de medicamentos revelou que a verdadeira saúde exige
+                    acolhimento, empatia e orientação de confiança. <br>
+
+                    Inspirados por essa superação e atentos às necessidades da comunidade local, os três
+                    fundadores decidiram transformar sua dor e bagagem profissional em um negócio com profunda
+                    missão social. Assim surgiu a MedSync, uma farmácia de bairro moderna e acessível,
+                    idealizada para estar em perfeita sintonia com a vida das pessoas. <br>
+
+                    Unindo tecnologia, inovação e a escuta ativa herdada da sala de aula, a MedSync oferece
+                    muito mais do que remédios: entrega apoio integral para idosos, famílias e pacientes em
+                    tratamento contínuo. Instalada em Rio Claro, a empresa reafirma diariamente seu compromisso
+                    ético de criar vínculos, garantindo que cada cliente se sinta acolhido, seguro e
+                    profundamente cuidado.
+                </p>
+            </div>
+            <div style="display: flex; justify-content: center; width:40vw;">
+                <img src="images/LogoMedSync.png" width="60%" style="border-radius: 100px;" alt="">
+            </div>
+
+        </section>
+
+        <!-- PAGINA 4 - Contato -->
+        <section id="converse"
+            style="height: 80vh; background-image: radial-gradient(circle, #004e98, #084181, #0b346b, #0a2855, #081d41); display: flex; justify-content: center; align-items: center;">
+            <div style="height: 71vh; width: 70vh; background-color: #00D478; margin: 1%;color: #081D41;">
+                <h1 class="FiraSans" style="display: flex; justify-content: center; align-items: center;">Converse com a
+                    gente!</h1>
+                <fieldset
+                    style="margin: 0%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <label for="#nome" style="font-size: 20px;">Nome Completo</label>
+                    <input id="nome" type="text" placeholder="Exemplo: 'Eduardo Jorge'"
+                        style="width: 30vw; height: 3.5vh; border-radius: 15px; border: none;"> <br>
+
+                    <label for="#email" style="font-size: 20px;">Email</label>
+                    <input id="email" type="text" placeholder="Exemplo: 'eduardojorge@senai.com.br'"
+                        style="width: 30vw; height: 3.5vh; border-radius: 15px; border: none;"> <br>
+
+                    <label for="msg" style="font-size: 20px;">Escreva sua mensagem </label>
+                    <textarea name="" id="msg"
+                        placeholder="Exemplo: 'eu gostei da forma como os antendentes me trataram...'"
+                        style="width: 30vw; height: 35vh; resize: none; border-radius: 15px; border: none;"></textarea>
+                    <br>
+
+                    <input type="submit" value="Enviar mensagem" id="btn-msg"
+                        style="width: 30vw; height: 3.5vh; border-radius: 15px; border: none; background-color: #0077B6; color: #00D478;">
+
+                </fieldset>
+            </div>
+            <div
+                style="height: 71vh; width: 70vh; background-color: #00D478; margin: 1%; display: flex; justify-content: center; align-items: center; flex-direction: column; color: #081D41; ">
+                <h1 class="FiraSans">Informações sobre a MedSync</h1>
+                <span>Localização: Rio Claro-SP</span>
+                <span>Telefone: (19) 99999-8888</span>
+                <span>Email: suportemedsync@mail.com</span>
+                <span>Horário: Segunda a Sábado, das 8h às 20h</span>
+                <span>Fundadores: Daniel, Eduardo e Grilo</span>
+                <img src="images/LogoMedSync.png" width="10%" alt="">
+
+            </div>
+        </section>
+        </main>
+
+        <footer style="height: 8vh; background-color: #A3F2C4;" class=" d-flex align-items-center justify-content-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home" style="text-decoration: none; color: #081D41;"> © MedSync 2026, Todos os direitos
+                        reservados</a>
+                </li>
+
+        </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
